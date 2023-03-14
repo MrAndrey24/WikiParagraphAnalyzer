@@ -9,5 +9,5 @@ In addition, the tool provides a user interface (UI) that presents the results c
 
 # The technologies used
 - C#
-- ASP.NET
+- ASP.NET(.Net framework)
 - LINQ.
