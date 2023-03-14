@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Paragraphs";
+}
+
+<h2>Paragraphs</h2>
+
+
+<div class="container mt-5">
+    <h2 class="mb-4">Paragraphs</h2>
+
+    <div class="col-md-8">
+        <table id="tblParagraphs" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Palabras que comienzan con A</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+    </div>
+
+    <div class="form-group row">
+        <label for="txtpromedio" class="col-sm-3 col-form-label">Promedio de palabras por párrafo:</label>
+        <div class="col-sm-9">
+            <input id="txtpromedio" type="text" class="form-control" ColumnDataName="Promedio" />
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="txtMas" class="col-sm-3 col-form-label">Párrafo con más palabras:</label>
+        <div class="col-sm-9">
+            <textarea id="txtMas" type="text" class="form-control" ColumnDataName="Mas"></textarea>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="txtMenos" class="col-sm-3 col-form-label">Párrafo con menos palabras:</label>
+        <div class="col-sm-9">
+            <textarea id="txtMenos" type="text" class="form-control" ColumnDataName="Menos"></textarea>
+        </div>
+    </div>
+
+    <script src="~/Scripts/Views/Paragraphs.js"></script>
