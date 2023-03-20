@@ -7,6 +7,10 @@ To handle the data, the application uses data transfer objects (DTOs) that ensur
 
 In addition, the tool provides a user interface (UI) that presents the results clearly and in an easy-to-understand manner. WikiParagraphAnalyzer is useful for those looking to learn more about consuming external APIs and using them in a project.
 
+# Here are the links to the API and API UI used by WikiParagraphAnalyzer:
+- https://acost-wiki-reader-lab1.azurewebsites.net/
+- https://wiki-reader-lab2-ui.azurewebsites.net/
+
 # The technologies used
 - C#
 - ASP.NET(.Net framework)
