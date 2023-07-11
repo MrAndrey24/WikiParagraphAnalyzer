@@ -33,15 +33,11 @@ namespace App_Logic
                     var paragraphs = dataObject.paragraphsList;
 
                     // Get the text that starts with "A"
-                    var wordsStartingWithMyName = paragraphs
-                                        .SelectMany(p => p.paragraphValue.Split(' ', (char)StringSplitOptions.RemoveEmptyEntries))
-                                        .Where(w => w.StartsWith("A", StringComparison.OrdinalIgnoreCase))
-                                        .Distinct() // remove duplicates
-                                        .ToList();
+                    var wordsStartingWithMyName = paragraphs.Where(p => p.paragraphValue.StartsWith("A")).ToList();
 
 
                     // Get the average words per paragraph
-                    var averageWordsPerParagraph = paragraphs.Select(p => p.paragraphValue.Split(' ').Length).Average();
+                    var averageWordsPerParagraph = paragraphs.Average(p => p.paragraphValue.Split(' ').Length);
 
                     // Get the paragraph with the most words
                     var paragraphWithMostWords = paragraphs.OrderByDescending(p => p.paragraphValue.Split(' ').Length).FirstOrDefault();
